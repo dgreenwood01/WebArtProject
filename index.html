@@ -1,0 +1,193 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+
+<title>  I/C U</title>
+
+<link rel="stylesheet" href="icu.css">
+    
+<link rel="icon" type="image/png" href="eye.png">
+
+<style>
+    
+    main {
+       background-image:  url(images/thermostat1.jpg);
+        background-repeat: no-repeat; 
+        background-attachment: fixed;
+        background-size: 100% auto;
+        -webkit-background-size: 100% auto;
+        margin: 0;
+        z-index: 10;
+    }
+    
+ 
+    
+    #stuff {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    margin-top: 100%;
+    background-color: rgba(0, 191, 255, 0.7);
+    text-align: center;
+    font-size: 1.5em;
+    color: #fff;
+    text-shadow: 2px 2px #333;
+}
+    
+    #stuff h1 {
+    position: relative;
+    top: 30%;
+    padding: 5px;
+}
+    
+    #stuff p {
+        width: 100%;
+        position: relative;
+        font-size: 1em;
+        top: 35%;
+        padding:5px;
+    }
+    
+  #thermostatbcgd {
+    background: url(images/family.jpg) #fff;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 20%;
+    padding-top: 65%;
+
+      z-index: 1;
+} 
+  
+    #thermostatbcgd img {
+        width: 100%;
+    }
+    
+    .button {
+        padding: 20px;
+        position: absolute;
+        margin-top: -55%;
+        margin-left: 50px;
+        text-transform: uppercase;
+        border: 2px solid deepskyblue;
+        color: deepskyblue;
+        transition: all 0.3s linear;
+    }
+    
+    .button:hover {
+        background-color: deepskyblue;
+        color: #fff;
+        cursor: pointer;
+        
+    }
+    
+    footer {
+        z-index: 10;
+    }
+    
+    @media only screen and (max-width: 800px) {
+        
+        main {
+            background-attachment: scroll;
+            position: relative;
+            height: 50%;
+        } 
+        
+        #stuff {
+                margin-top: 67%;
+                height: auto;            
+}
+        #stuff p, #stuff h1 {
+            left: -5px;}
+      
+        
+    }
+    
+
+        
+</style>
+
+</head>
+<body>
+
+
+
+<div id="container">
+
+
+
+<header>
+<a href="index.html"> <img class="logo" src="images/logo.jpg" alt="eye"> </a>
+</header>
+
+<nav>
+
+   <ul>
+       <li> <a href="index.html">Home</a></li>
+       <li> <a href="about.html">About</a></li>
+       <li> <a href="faq.html"> FAQs</a></li>
+       <li> <a href="reviews.html">Reviews</a></li>
+       <li> <a href="login.html"> Login</a></li>
+       <input class="searchbar" type="text" placeholder="Search...">
+       <button class="searchbut" type="submit"> Submit</button>
+   </ul>
+    
+</nav>
+
+
+
+<main>
+    
+         <div id="stuff">
+            <h1> Is your electric bill making you sweat?</h1>
+                <p> Now with I/C U you can let us help you save money by controlling the temperature <br>of the rooms in your house.</p>
+        </div>
+
+        <div id="thermostatbcgd">
+            <button class="button" type="button"> Sign up Now!</button>
+        </div>
+        
+      
+        
+
+
+
+    
+
+    
+
+
+</main>
+
+
+
+<!-- section container -->
+
+<section>
+    
+    
+   
+
+</section>
+
+
+<!-- section container end -->
+
+
+
+</div> <!-- end container here -->
+    
+    <footer>
+        <div>
+            <h4>Copyright &copy; 2018 I/C U</h4>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>

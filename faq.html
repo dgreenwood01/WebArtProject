@@ -1,0 +1,180 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+
+<title>  I/C U FAQ</title>
+
+<link rel="stylesheet" href="icu.css">
+    
+<link rel="icon" type="image/png" href="eye.png">
+
+<style>
+    
+    #wrapper {
+        padding: 5px;
+    }
+    
+    .accordion {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        text-align: left;
+        outline: none;
+        transition: 0.4s;
+    }
+    
+    .active, .accordion:hover {
+        background-color: deepskyblue;
+    }
+    
+    .accordion:after {
+        content: '\002B';
+        color: #000;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+    }
+    
+    .active:after {
+        content: '\2212';
+    }
+    
+    .panel {
+        padding: 0 18px;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+    
+    
+</style>
+
+</head>
+<body>
+
+
+
+<div id="container">
+
+
+
+<header>
+<a href="index.html"> <img class="logo" src="images/logo.jpg" alt="eye"> </a>
+</header>
+
+<nav>
+
+   <ul>
+       <li> <a href="index.html">Home</a></li>
+       <li> <a href="about.html">About</a></li>
+       <li> <a href="faq.html"> FAQs</a></li>
+       <li> <a href="reviews.html">Reviews</a></li>
+       <li> <a href="login.html"> Login</a></li>
+       <input class="searchbar" type="text" placeholder="Search...">
+       <button class="searchbut" type="submit"> Submit</button>
+   </ul>
+    
+</nav>
+
+
+
+<main style="background-color: #c2c9d0; padding: 1px;">
+    <div id="wrapper">
+    <div id="container">
+        <h1 style="text-align:center;"><b> Frequently Asked Questions</b></h1>
+        <button class="accordion"><b> How often am I being tracked?</b> </button>
+            
+            <div class="panel">
+                <p> Our employees survey you at all times. We want to make sure that our customers get the most out of our service, therefore, we must be following all the time. However, if you want to turn the tracking setting off you can do so in the system settings, although we don't recommend it.</p>
+            </div>
+        <button class="accordion"><b> Does it really save money?</b> </button>
+            
+            <div class="panel">
+                <p> Yes! It costs significantly more to heat an entire home during the winter months than it does to heat a select few rooms that you are spending the most time in. We want our customers to be able to spend their electric bills on something more meaningful in life like a vacation or getaway.</p>
+            </div>
+        <button class="accordion"><b> Nobody knows when we aren't home other than the person tracking us right?</b> </button>
+            
+            <div class="panel">
+                <p> That information is confidential only to our company. We are not responsible for any possible break-ins that could be caused when nobody is home. We are sorry in advance for any theft.</p>
+            </div>
+        
+    
+    
+    </div>
+    </div>
+    
+        
+
+    
+
+    
+
+
+</main>
+
+
+
+<!-- section container -->
+
+<section>
+    
+    
+   
+
+</section>
+
+
+<!-- section container end -->
+
+
+
+</div> <!-- end container here -->
+    
+    <footer>
+        <div>
+            <h4>Copyright &copy; 2018 I/C U</h4>
+        </div>
+    </footer>
+    
+    <script>
+        function myFunctions() {
+                    var x = 
+                document.getElementById("myTopnav");
+                if (x.className === "topnav"){
+                   x.className += "responsive"; 
+                }
+                else {
+                    x.className = "topnav"'
+                }
+        }
+    
+    </script>
+    
+    <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function(){
+                    this.classList.toggle("active");
+                        var panel = this.nextElementSibling;
+                        if (panel.style.maxHeight) {
+                            panel.style.maxHeight = null;
+                        }
+                        else {
+                            panel.style.maxHeight = panel.scrollHeight + "px";
+                        }
+                })
+            }
+    </script>
+
+
+
+</body>
+
+</html>

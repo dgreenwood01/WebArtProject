@@ -1,0 +1,232 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+
+<title>  I/C U Personal Settings</title>
+
+<link rel="stylesheet" href="icu.css">
+    
+<link rel="icon" type="image/png" href="eye.png">
+
+<style>
+
+    
+    p {
+        padding: 5px;
+    }
+    
+    .settings {
+        text-align: left;
+        margin: 10px;
+    }
+    
+     p {
+        margin: 10px;
+    }
+    
+    .action {
+        
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    
+    form.action {
+            margin-left: 45px;
+        }
+    
+    .rooms {
+        margin-left: 45px;
+    }
+    
+    .submit {
+        width: 90px;
+        height: 26px;
+        background-color: #fff;
+        text-transform: uppercase;
+        color: deepskyblue;
+        border: 2px solid deepskyblue;
+        cursor: pointer;
+        font-size: 13px;
+        margin: 10px;
+    }
+    
+    .submit:hover {
+        width: 90px;
+        height: 26px;
+        background-color: deepskyblue;
+        text-transform: uppercase;
+        color: #fff;
+        cursor: pointer;
+        font-size: 13px;
+        margin: 10px; 
+        
+    }
+    
+    
+</style>
+
+</head>
+<body>
+
+
+
+<div id="container">
+
+
+
+<header>
+<a href="index.html"> <img src="images/logo.jpg" alt="eye"> </a>
+</header>
+
+<nav>
+
+   <ul>
+       <li> <a href="index.html">Home</a></li>
+       <li> <a href="about.html">About</a></li>
+       <li> <a href="faq.html"> FAQs</a></li>
+       <li> <a href="reviews.html">Reviews</a></li>
+       <li> <a href="login.html"> Login</a></li>
+       <input class="searchbar" type="text" placeholder="Search...">
+        <button class="searchbut" type="submit"> Submit</button>
+   </ul>
+    
+</nav>
+
+
+
+<main>
+    <div id="login">
+        
+        <h1 class="settings"> User Settings</h1>
+        
+        <p><b> Which rooms to watch: </b></p>
+        
+        <p class="action">Check all rooms you want us to watch:</p>
+            <form class="action" action="/action_page.php" method="get">
+                
+                <input type="checkbox" name="kitchen" value="kitchen"> Kitchen
+                <br>
+                <img src="images/kitchen.jpg" alt="kitchen" style="width: 200px; height: 200px; padding: 5px;">
+                  <br>
+                <input type="checkbox" name="familyroom" value="familyroom"> Family Room
+                <br>
+                <img src="images/familyroom.jpg" alt="familyroom" style="width: 200px; height: 200px; padding: 5px;">
+                <br>
+                <input type="checkbox" name="masterbedroom" value="masterbedroom"> Master Bedroom
+                <br>
+                <img src="images/master.jpeg" alt="master" style="width: 200px; height: 200px; padding: 5px;">
+                <br>
+                <input type="checkbox" name="diningroom" value="diningroom"> Dining Room
+                <br>
+                <img src="images/dining.jpg" alt="dining" style="width: 200px; height: 200px; padding: 5px;">
+                <br> 
+                <input type="checkbox" name="basement" value="basement"> Basement
+                <br>
+                <img src="images/basement.jpeg" alt="basement" style="width: 200px; height: 200px; padding: 5px;">
+        </form>
+        
+            <p><b> Desired Temperature:</b></p>
+        
+            <p class="action">Temperature you want for each room:</p>
+        
+            <p class="rooms"> Kitchen:</p>
+                <form class="action">
+                    <input type="radio" name="temperature" value="temperature"> 60-65 &#8457;
+                    <br>
+                    <input type="radio" name="temperature" value="temperature"> 66-70 &#8457;
+                    <br>
+                    <input type="radio" name="temperature" value="temperature"> 71-75 &#8457;
+                    <br>
+                    <input type="radio" name="temperature" value="temperature"> 75+ &#8457;
+                    <br>
+            </form>
+        
+            <p class="rooms"> Family Room:</p>
+                <form class="action">
+                    <input type="radio" name="temperature" value="temperature"> 60-65 &#8457;
+                    <br>
+                    <input type="radio" name="temperature" value="temperature"> 66-70 &#8457;
+                    <br>
+                    <input type="radio" name="temperature" value="temperature"> 71-75 &#8457;
+                    <br>
+                    <input type="radio" name="temperature" value="temperature"> 75+ &#8457;
+                    <br>
+            </form>
+        
+            <p class="rooms"> Master Bedroom:</p>
+                <form class="action">
+                    <input type="radio" name="temperature" value="temperature"> 60-65 &#8457;
+                    <br>
+                    <input type="radio" name="temperature" value="temperature"> 66-70 &#8457;
+                    <br>
+                    <input type="radio" name="temperature" value="temperature"> 71-75 &#8457;
+                    <br>
+                    <input type="radio" name="temperature" value="temperature"> 75+ &#8457;
+                    <br>
+            </form>
+        
+            <p class="rooms"> Dining Room:</p>
+                <form class="action">
+                    <input type="radio" name="temperature" value="temperature"> 60-65 &#8457;
+                    <br>
+                    <input type="radio" name="temperature" value="temperature"> 66-70 &#8457;
+                    <br>
+                    <input type="radio" name="temperature" value="temperature"> 71-75 &#8457;
+                    <br>
+                    <input type="radio" name="temperature" value="temperature"> 75+ &#8457;
+                    <br>
+            </form>
+        
+            <p class="rooms"> Bathroom:</p>
+                <form class="action">
+                    <input type="radio" name="temperature" value="temperature"> 60-65 &#8457;
+                    <br>
+                    <input type="radio" name="temperature" value="temperature"> 66-70 &#8457;
+                    <br>
+                    <input type="radio" name="temperature" value="temperature"> 71-75 &#8457;
+                    <br>
+                    <input type="radio" name="temperature" value="temperature"> 75+ &#8457;
+                    <br>
+            </form>
+        
+        <button class="submit" type="submit"> Submit</button>
+            
+    </div>
+
+    
+
+    
+
+
+</main>
+
+
+
+<!-- section container -->
+
+<section>
+    
+
+   
+
+</section>
+
+
+<!-- section container end -->
+
+<footer>
+        <div>
+            <h4>Copyright &copy; 2018 I/C U</h4>
+        </div>
+    </footer>
+
+</div> <!-- end container here -->
+
+
+
+</body>
+
+</html>

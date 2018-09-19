@@ -1,0 +1,175 @@
+body {
+	font-family: "Helvetica Neue";
+}
+
+#container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+
+header img {
+    height: 10%;
+    width: auto;
+    margin-left: 33%;
+}
+
+main {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	float: left;
+	background-color: lightgray;
+    
+}
+
+footer {
+    position: relative;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    max-width: 1200px;
+    text-transform: none;
+    text-align: center;
+	clear: both;
+	height: 3em;
+    background-color: deepskyblue;
+    padding: 3px;
+
+}
+
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: deepskyblue;
+}
+
+main h1, h2 {
+    text-align: center;
+    padding: 5px;
+}
+
+.searchbar {
+        margin-left: 30%;
+        width: 120px;
+        height: 30px;
+        margin-top: 4.5px;
+    }
+
+.searchbut {
+        margin-left: 4px;
+        width: 67px;
+        height: 36px;
+        margin-top: 4.5px;
+        background-color: #fff;
+        text-transform: uppercase;
+        color: deepskyblue;
+        border: 2px solid deepskyblue;
+        cursor: pointer;
+        font-size: 13px;
+        border-radius: 5px;
+    }
+
+.searchbut:hover {
+    background-color: deepskyblue;
+    color: #fff;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    transition: 0.4s; 
+}
+
+.active, .accordi0n:hover {
+    background-color: deepskyblue;
+}
+
+.accordi0n:after {
+    content: '\002B';
+    color: #000;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+
+@media only screen and (max-width: 500px) {
+    
+    nav ul {
+        flex-direction: column;
+    }
+    
+    #container { 
+        width: 100%;
+    }
+    
+    header img {
+        margin-left: 0%;
+    }
+    
+    main p{
+        width: 60%;
+    }
+    
+    .searchbut {
+        margin-left: 150px;
+    }
+    
+    footer {
+        
+    }
+      
+}
+
+@media only screen and (min-width: 800px) {
+    .searchbar {
+        margin-left: 45%;
+        width: 180px;
+        height: 30px;
+        margin-top: 4.5px;
+    }
+    
+    .searchbut {
+        margin-left: 4px;
+        
+    }
+}
